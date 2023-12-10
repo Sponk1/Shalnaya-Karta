@@ -316,3 +316,54 @@ img {
   flex: none;
 
 }
+
+.grid {
+  display:grid;
+  grid-gap: 20px;
+}
+
+.skin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  z-index: 1;
+  align-items: stretch;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #383f5e 0, #1e2339 100%);
+  border: 2px solid #383f5e;
+  border-bottom: 2px solid;
+  min-height: 145px;
+}
+
+.skin_price {
+  width: max-content;
+  margin-top: 8px;
+  order: 1;
+  font-weight: 600;
+  color: #fff;
+}
+
+.skin_type, .skin_name {
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 15px;
+  transition: .08s ease;  
+}
+
+
+.skin_type {
+  margin-bottom: 1px;
+}
+
+.skin_type {
+  padding-right: 25px;
+}
+
+
+.skin_img {
+  margin: 0 auto auto;
+  transition: .3s ease;
+}
